@@ -1,49 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    
-    <title>My Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Use CDN versions of Three.js & Vanta -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+
+  <title>My Portfolio</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#about">👤</a>
-            <a href="#services">💼</a>
-            <a href="#projects">📁</a>
-            <a href="#contact">📞</a> 
-            <span></span>
-        </nav>
-    </header>
+  <!-- Vanta Globe Background -->
+  <div id="background" style="width:150%; height:100%; position:fixed; z-index:-1;"></div>
 
-    <section id="about">
-        <div class="profile" style="display: flex; gap: 80px;">
-            <div> <img src="/pic/me.jpg" alt="Profile Picture" width="350px" style=" border-radius: 50px;"> </div>
-            <div>
-            <h1>Hi! My Name is Lance Krystian Andres</h1>
-            <p>Welcome to my portfolio! I am a future web developer with a passion for creating beautiful and functional websites.</p>
-            </div>
-        </div>
- </section>
-    <section id="services">
-       <p>
-  <img src="https://skillicons.dev/icons?i=react,express,nodejs,mongodb,html,css,tailwind,js,ts,kotlin,androidstudio,git,github,vscode,figma,cpp,java,python" />
-       </p>
-       </section>
+  <header>
+    <nav>
+      <a href="#about">👤</a>
+      <a href="#services">💼</a>
+      <a href="#projects">📁</a>
+      <a href="#contact">📞</a> 
+      <span></span>
+    </nav>
+  </header>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>Project 1: A cool website</li>
-            <li>Project 2: Another awesome project</li>
-            <li>Project 3: Yet another great work</li>
-        </ul>
-    </section>
+  <section id="about">
+    <div class="profile" style="display: flex;">
+      <div><img src="/pic/me.jpg" alt="Profile Picture" width="350px" style="border-radius: 50px;"></div>
+      <div>
+        <h1>Hi! My Name is <br>Lance Krystian Andres</h1>
+        <p>Hi, I’m Lance Krystian Andres — a passionate and aspiring web developer.
+I enjoy building modern, responsive websites that blend clean design with functional user experiences. With a growing skillset in frontend and backend technologies, fI’m committed to continuous learning and turning creative ideas into real-world digital solutions.</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email:
+ <section id="services">
+  <div class="lang">
+    <h1>What I'm Using</h1>
+    <div>
+    <img src="https://skillicons.dev/icons?i=react" alt="React" />
+    <img src="https://skillicons.dev/icons?i=express" alt="Express" />
+    <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" />
+    <img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" />
+    <img src="https://skillicons.dev/icons?i=html" alt="HTML" />
+    <img src="https://skillicons.dev/icons?i=css" alt="CSS" />
+    <img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind CSS" />
+    <img src="https://skillicons.dev/icons?i=js" alt="JavaScript" />
+    <img src="https://skillicons.dev/icons?i=ts" alt="TypeScript" />
+    <img src="https://skillicons.dev/icons?i=kotlin" alt="Kotlin" />
+    <img src="https://skillicons.dev/icons?i=androidstudio" alt="Android Studio" />
+    <img src="https://skillicons.dev/icons?i=git" alt="Git" />
+    <img src="https://skillicons.dev/icons?i=github" alt="GitHub" />
+    <img src="https://skillicons.dev/icons?i=vscode" alt="VS Code" />
+    <img src="https://skillicons.dev/icons?i=figma" alt="Figma" />
+    <img src="https://skillicons.dev/icons?i=cpp" alt="C++" />
+    <img src="https://skillicons.dev/icons?i=java" alt="Java" />
+    <img src="https://skillicons.dev/icons?i=python" alt="Python" />
+    </div>
+  </div>
+</section>
+
+
+  <section id="projects">
+    <div class="proj">
+        <div><h1>Projects</h1></div>
+        <div><h2>Coming Soon!</h2></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: lanceandres12.la@gmail.com</p>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      VANTA.GLOBE({
+        el: "#background",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0xcfcfcf,
+        color2: 0xbbbbbb,
+        size: 0.90,
+        backgroundColor: 0xffffff
+      });
+    });
+  </script>
 </body>
 </html>
