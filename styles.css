@@ -172,10 +172,18 @@ nav a:nth-child(5):hover ~ span { top: 510px; }
   .edu {
     margin: 20px;
     flex-direction: column;
-    gap: 20px;
     padding: 20px;
     height: auto;
     text-align: center;
+    justify-content: center;
+  }
+
+  .edu-item {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0; 
   }
 
   .profile img {
