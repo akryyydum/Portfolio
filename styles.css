@@ -169,6 +169,7 @@ nav a:nth-child(5):hover ~ span { top: 510px; }
     height: auto;
     text-align: center;
   }
+
   .edu {
     margin: 20px;
     flex-direction: column;
@@ -184,19 +185,13 @@ nav a:nth-child(5):hover ~ span { top: 510px; }
     width: 100%;
     justify-content: center;
     align-items: center;
-    margin: 20px 0; 
+    margin: 20px 0;
   }
 
   .profile img {
     width: 250px;
   }
-  .edu-item {
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin: 0%;
-  }
+
   .profile h1,
   .lang h1,
   .proj h1 {
