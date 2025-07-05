@@ -27,6 +27,40 @@ body {
     color: #333;
     margin-bottom: 20px;
 }
+.edu{
+    width: 85%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    margin-left: 50px;
+}
+.edu h1 {
+    font-size: 4em;
+    justify-content: center;
+    color: #333;
+    margin-bottom: 20px;
+    width: 80%;
+}
+.edu-item {
+    flex: auto;
+    display: flex;
+    flex-direction: row;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+    max-width: 800px;
+    justify-content: center;
+    text-align: center;
+}
 .lang {
     margin: 0 0 50px 150px;
     width: 85%;
@@ -118,14 +152,16 @@ nav span {
 }
 
 
-nav a:nth-child(1):hover ~ span { top: 100px; }
-nav a:nth-child(2):hover ~ span { top: 230px; }
-nav a:nth-child(3):hover ~ span { top: 360px; }
-nav a:nth-child(4):hover ~ span { top: 490px; }
+nav a:nth-child(1):hover ~ span { top: 80px; }
+nav a:nth-child(2):hover ~ span { top: 185px; }
+nav a:nth-child(3):hover ~ span { top: 295px; }
+nav a:nth-child(4):hover ~ span { top: 405px; }
+nav a:nth-child(5):hover ~ span { top: 510px; }
+
 
 @media (max-width: 1024px) {
   .profile,
-  .lang {
+  .lang, .edu {
     margin: 0;
     flex-direction: column;
     gap: 0px;
@@ -137,7 +173,6 @@ nav a:nth-child(4):hover ~ span { top: 490px; }
   .profile img {
     width: 250px;
   }
-
   .profile h1,
   .lang h1,
   .proj h1 {
@@ -157,7 +192,7 @@ nav a:nth-child(4):hover ~ span { top: 490px; }
 
 @media (max-width: 768px) {
       .profile,
-  .lang, .proj {
+  .lang,.edu, .proj {
     margin: 0;
     flex-direction: column;
     gap: 0px;
